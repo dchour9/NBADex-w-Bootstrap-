@@ -35,14 +35,28 @@
 	</div>
 	<div>
 		<h3>Making use of the map element</h3>
-		<img src="img/flag.png" width="300" height="300" alt="flag" usemap="#flagmap">
+		<img src="flag.png" width="300" height="300" alt="flag" usemap="#flagmap">
 
 		<map name="flagmap">
-  			<area shape="rect" coords="0,0,100,100" alt="Blue" href="img/blue.png">
-  			<area shape="rect" coords="100,0,200,200" alt="White" href="img/red.png">
-  			<area shape="rect" coords="200,0,200,300" alt="Red" href="img/white.png">
+  			<area shape="rect" coords="0,0,100,300" alt="Blue" href="blue.png">
+  			<area shape="rect" coords="100,0,200,300" alt="White" href="white.png">
+  			<area shape="rect" coords="200,0,300,300" alt="Red" href="red.png">
 		</map>
 	</div>
-
+	<div>
+		<h3>SVG element</h3>
+		<svg width="200" height="200">
+  		<circle cx="50" cy="50" r="40"
+  		stroke="red" stroke-width="3" fill="blue" />
+		</svg>
+	</div>
+	<div>
+		<h3>Math element</h3>
+   		<math>
+    		<mi>y</mi>
+    		<mo>=</mo>
+    		<mi>x</mi>
+   		</math>
+</div>
 </body>
 </html>
