@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+</head>
+
+<body>
+	<form>
+		<label><input type=radio name=radio> Radio</label>
+		<button type=button>New button</button>
+		<p>
+ 			<label for="options">Select option:</label>
+ 			<select id="options" name="options">
+  			<option value="1"> option 1 </option>
+  			<option value="2"> option 2 </option>
+  			<option value="3" selected> option 3 </option>
+ 			</select>
+		</p>	
+		<label>
+ 		Gender:
+ 			<input name=gender list=gender>
+ 			<datalist id=gender>
+  			<option value="Female">
+  			<option value="Male">
+ 			</datalist>
+		</label>
+		<br>
+		<select name="c">
+   <optgroup label="group 1">
+    <option value="1.1">1:1
+    <option value="1.2">1:2
+    <option value="1.3">1:3
+   <optgroup label="group 2">
+    <option value="2.1">2:1
+    <option value="2.2">2:2
+    <option value="2.3">2:3
+  </select>
+  <br>
+  <textarea name="new text"></textarea>
+  <br>
+  <br>
+  <input name=a type=text > +
+ <input name=b type=text > =
+ <output name=o for="a b"></output>
+ <br>
+ <progress id="progress" max=50>	</progress><br>
+ meter: <meter max=30 value =10></meter><br>
+ <fieldset>
+ <legend>Legend</legend>
+ <div><label><input type=checkbox name=c value=0 checked>  checkbox</label></div>
+ <div><label><input type=radio name=r value=1> radio</label></div>
+ <div><label><input type=checkbox name=b> Use alternate option</label></div>
+</fieldset>
+</form>
+
+	
+</body>
+
+
+</html>
