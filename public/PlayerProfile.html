@@ -9,39 +9,42 @@
 </head>
 
 <body>
-    <input type="text" placeholder="Search...">
-    <input type="Submit" value="Submit">
-
-
-    <br><br>
-    <a href="userprofile.html">
-        <img src="profile.png" style="width:50px;height:50px" alt="profile">
-    </a>
-    <h1>Demarcus Cousins</h1>
-    <h2>Sacramento Kings</h2>
-
-    <table>
+    <div>
+        <a href="SearchResults.html">
+            <input style="float:right" type="Submit" value="Search">
+        </a>
+        <input style="float:right" type="text" placeholder="Find Player...">
+        <a href="userprofile.html">
+            <img src="profile.png" style="width:50px;height:50px" alt="profile">
+        </a>
+    </div>
+    <div>
+        <img class="player-thumbnail" style="width:325px;height:225px" alt="First Last" src="img/demarcus.png" />
+        <table id="stats">
         <tr>
             <th>PPG</th>
-            <th>RRG</th>
-            <th>BLKPG</th>
+            <th>RPG</th>
+            <th>BPG</th>
         </tr>
         <tr>
             <td>28.1</td>
             <td>10.4</td>
             <td>1.4</td>
         </tr>
-    </table>
-    <ul class="Player Profile Tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Game by Game Log</a></li>
-        <li><a data-toggle="tab" href="#menu2">Player Bio</a></li>
-        <li><a data-toggle="tab" href="#menu3">Seasonal Stats</a></li>
-    </ul>
+        </table>
+        <h1>Demarcus Cousins</h1>
+        <h2>Sacramento Kings</h2>
+    </div>
 
-    <div class="tab-content">
-        <div>
-            <h3>Game by Game Log</h3>
-            <table style="width:100%">
+<div class="tab">
+  <a href="javascript:void(0)" class="tablinks active" onclick="openTab(event, 'GBGL')">Game By Game Log</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Player Bio')">Player Bio</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Seasonal Stats')">Seasonal Stats</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Career Highs')">Career Highs</a>
+</div>
+
+<div id="GBGL" class="tabcontent">
+            <table class="table">
                 <tr>
                     <th>Date</th>
                     <th>Opp</th>
@@ -75,66 +78,112 @@
                     <td>5</td>
                 </tr>
             </table>
-        </div>
-        <div>
-            <h3>Player Bio</h3>
-            <h4>#15 PF | 6'11", 270 LBS | Sacramento Kings</h4>
-            <h5>Born: 1/6/87</h5>
-            <h5>Drafted 2010, Round 1 Sacramento Kings</h5>
-            <h5>College: Kentucky</h5>
-            <h5>Experience: 6</h5>
-            <h4>Career Highs</h4>
-            <table>
-                <tr>
-                    <th>Points</th>
-                    <th>Rebounds</th>
-                    <th>Assists</th>
-                </tr>
-                <tr>
-                    <td>55</td>
-                    <td>20</td>
-                    <td>9</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h3>Seasonal Stats</h3>
-            <table>
-                <tr>
-                    <th>Season</th>
-                    <th>Team</th>
-                    <th>Games Played</th>
-                    <th>Points Per Game</th>
-                    <th>Rebounds Per Game</th>
-                    <th>Blocks Per Game</th>
-                </tr>
-                <tr>
-                    <td>2016-2017</td>
-                    <td>Sacramento Kings</td>
-                    <td>39</td>
-                    <td>31.4</td>
-                    <td>13.5</td>
-                    <td>3.3</td>
-                </tr>
-                <tr>
-                    <td>2015-2016</td>
-                    <td>Sacramento Kings</td>
-                    <td>81</td>
-                    <td>26.4</td>
-                    <td>13.2</td>
-                    <td>2.1</td>
-                </tr>
-                <tr>
-                    <td>2014-2015</td>
-                    <td>Sacramento Kings</td>
-                    <td>82</td>
-                    <td>28.1</td>
-                    <td>10.4</td>
-                    <td>1.4</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+</div>
+
+<div id="Player Bio" class="tabcontent">
+    <div>
+    <table class="table">
+        <th>Born:</th>
+            <td>1/6/87</td>
+        </tr>
+        <tr>
+            <th>Drafted:</th>
+            <td>2010: 1st Rnd, 5th by SAC</td>
+        </tr>
+        <tr>
+            <th>College:</th>
+            <td>Kentucky</td>
+        </tr>
+        <tr>
+            <th>Experience:</th>
+            <td>6 years</td>
+        </tr>
+        <tr>
+            <th>Height:</th>
+            <td>6'11''</td>
+        </tr>
+        <tr>
+            <th>Weight:</th>
+            <td>270 LBS</td>
+        </tr>
+        <tr>
+            <th>Position:</th>
+            <td>Power Forward</td>
+        </tr>
+        <tr>
+            <th>Jersey Number:</th>
+            <td>#15</td>
+        </tr>
+    </table>    
+</div>
+</div>
+
+<div id="Seasonal Stats" class="tabcontent">
+    <table class="table">
+        <tr>
+            <th>Season</th>
+            <th>Team</th>
+            <th>Games Played</th>
+            <th>Points Per Game</th>
+            <th>Rebounds Per Game</th>
+            <th>Blocks Per Game</th>
+        </tr>
+        <tr>
+            <td>2016-2017</td>
+            <td>Sacramento Kings</td>
+            <td>39</td>
+            <td>31.4</td>
+            <td>13.5</td>
+            <td>3.3</td>
+        </tr>
+        <tr>
+            <td>2015-2016</td>
+            <td>Sacramento Kings</td>
+            <td>81</td>
+            <td>26.4</td>
+            <td>13.2</td>
+            <td>2.1</td>
+        </tr>
+        <tr>
+            <td>2014-2015</td>
+            <td>Sacramento Kings</td>
+            <td>82</td>
+            <td>28.1</td>
+            <td>10.4</td>
+            <td>1.4</td>
+        </tr>
+    </table>
+</div>
+
+<div id="Career Highs" class="tabcontent">
+    <table class="table">
+        <tr>
+            <th>Points</th>
+            <th>Rebounds</th>
+            <th>Assists</th>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>20</td>
+            <td>9</td>
+        </tr>
+    </table>
+</div>
+
+<!--Javascript, only 10 lines for very basic opening of tab as set forth by assignment -->
+<script>
+    document.getElementById("GBGL").style.display = "block";
+    function openTab(evt, tabName) {
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++)
+            tabcontent[i].style.display = "none";
+            var tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++)
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 </body>
 
 </html>
