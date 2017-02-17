@@ -10,6 +10,19 @@
     border-radius: 7px;
 }
 
+a{
+    text-decoration: none;
+}
+
+input[type="submit"]{
+    background-color:deepskyblue;
+    border:none;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -53,10 +66,46 @@ div.tab a:focus, .active {
     background-color: deepskyblue;
 }
 
+input,label{
+    display:block;
+}
+
+
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 70px 12px;  
+}
+#loginBody{
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#TopBanner{
+    color:white;
+    font-size: 30px;
+}
+#usernameLogin, #passwordLogin{
+    font-size: 15px;
+}
+#Login{
+    float:right;
+    margin-right: 220px;
+}
+
+#Login input[type="text"]{
+    width:170px;
+}
+
+#Signup{
+    color:white;
+    float:right;
+    margin-right: 180px;
+}
+#Signup-fields > input[type="text"]{
+    width: 250px;
+    height:25px;
+    border-radius:6px;
+    border-top-color: white;
 }
 
 #usernameText{
@@ -66,7 +115,6 @@ div.tab a:focus, .active {
 #passwordText{
 
 }
-
 #usernameBox {
     float: right;
     margin-right: 400px;
