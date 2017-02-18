@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <title>Player Profile</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div>
         <a href="SearchResults.html">
-            <input style="float:right" type="Submit" value="Search">
+            <input class="btn btn-default" role="button" style="float:right" type="Submit" value="Search">
         </a>
         <input style="float:right" type="text" placeholder="Find Player...">
         <a href="userprofile.html">
@@ -20,7 +21,7 @@
     </div>
     <div>
         <img class="player-thumbnail" style="width:325px;height:225px" alt="First Last" src="img/demarcus.png" />
-        <table id="stats">
+        <table class ="table" id="stats">
         <tr>
             <th>PPG</th>
             <th>RPG</th>
@@ -37,10 +38,10 @@
     </div>
 
 <div class="tab">
-  <a href="javascript:void(0)" class="tablinks active" onclick="openTab(event, 'GBGL')">Game By Game Log</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Player Bio')">Player Bio</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Seasonal Stats')">Seasonal Stats</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Career Highs')">Career Highs</a>
+  <a href="javascript:void(0)" class="btn btn-default" role="button" class="tablinks active" onclick="openTab(event, 'GBGL')">Game By Game Log</a>
+  <a href="javascript:void(0)" class="btn btn-default" role="button" class="tablinks" onclick="openTab(event, 'Player Bio')">Player Bio</a>
+  <a href="javascript:void(0)" class="btn btn-default" role="button" class="tablinks" onclick="openTab(event, 'Seasonal Stats')">Seasonal Stats</a>
+  <a href="javascript:void(0)" class="btn btn-default" role="button" class="tablinks" onclick="openTab(event, 'Career Highs')">Career Highs</a>
 </div>
 
 <div id="GBGL" class="tabcontent">

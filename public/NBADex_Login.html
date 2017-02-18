@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <title>NBADex Login</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="loginBody" background="nba-logo-on-wood.jpg">
+<body id="loginBody">
     <div id="TopBanner">
         NBADex
+        <form>
         <div id="Login">
-            <div id="usernameLogin">
+            <div id="usernameLogin" class="form-group">
                 <label for="username">Username</label>
-                <input id="username" type="text" name="username"> 
+                <input id="username" type="username" class="form-control" name="username"> 
             </div>
-            <div id="passwordLogin">
+            <div id="passwordLogin" class="form-group">
                 <label for"password">Password</label>
-                <input id="password" type="text" name="password"><br>
-                <a href="userprofile.html">
-                    <input type="submit" value="Login">
-                </a>
+                <input type="password" class="form-control" id="password" name="password"><br>
+                <a class="btn btn-default" role="button" href="userprofile.html">Login</a>
                 <br>   
             </div>
         </div>
+    </form>
     
 
     
@@ -34,16 +35,16 @@
     <br><br><br><br>
     <div id="Signup">
         <h2>Create a New Account</h2>
+        <form>
         <div id="Signup-fields">
-            <input type="text" name="firstname" placeholder="First name"><br>
-            <input type="text" name="lastname" placeholder="Last name"><br>
-            <input type="text" name="email" placeholder="email"><br>
-            <input type="text" name="password" placeholder="password"><br>
-            <input type="text" name="verifyPW" placeholder="Re-enter password"><br>
-            <a href="userprofile.html">
-                <input type="submit" value="Sign up!">
-            </a>
+            <input class="form-control" type="text" name="firstname" placeholder="First name"><br>
+            <input class="form-control" type="text" name="lastname" placeholder="Last name"><br>
+            <input class="form-control" type="text" name="email" placeholder="email"><br>
+            <input class="form-control" type="text" name="password" placeholder="password"><br>
+            <input class="form-control" type="text" name="verifyPW" placeholder="Re-enter password"><br>
+            <a class="btn btn-default" role="button" href="userprofile.html">Sign Up!</a>
         </div>
+    </form>
     </div>
 </body>
 

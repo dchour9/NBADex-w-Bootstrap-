@@ -6,14 +6,16 @@
     <meta charset="utf-8">
     <title>User Profile</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="userProfile">
 
     <div>
         <a href="SearchResults.html">
-            <input style="float:right" type="Submit" value="Search">
+            <input class="btn btn-default" role="button" style="float:right" type="Submit" value="Search">
         </a>
         <input style="float:right" type="text" placeholder="Find Player...">
 
@@ -57,7 +59,9 @@
                 <td>17.5</td>
             </tr>
         </table>
-        <button class="button" type="button">Add Player</button>
+        <a href="SearchResults.html">
+        <button class="btn btn-default" type="submit">Add a Player</button>
+    </a>
     </div>
 
     <hr>
@@ -86,7 +90,7 @@
                 <td>28.7</td>
             </tr>
         </table>
-        <button class="button" type="button">More</button>
+        <button class="btn btn-default" type="submit">More</button>
     </div>
 
 </body>
