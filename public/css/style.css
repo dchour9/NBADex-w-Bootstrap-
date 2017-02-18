@@ -1,12 +1,18 @@
 body#loginBody{
+	background: center center fixed;
 	background-image: url('../nba-logo-on-wood.jpg');
 	background-size:cover;
 	color:white;
+	min-height: 100%;
 }
 body{
+	background: center center fixed;
 	background-image:url('../PaintSquares_1920x1234.jpg');
 	color:black;
 	background-size:cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+
 }
 .tabcontent{
 	display: none;
